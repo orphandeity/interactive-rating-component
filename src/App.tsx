@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { RadioGroup } from '@headlessui/react';
 import StarIcon from './assets/icon-star.svg';
 
 function App() {
@@ -17,23 +18,7 @@ function App() {
           is appreciated to help us improve our offering!
         </p>
 
-        <div className="flex justify-between py-2 text-_light-gray">
-          <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white">
-            <p className="translate-y-0.5">1</p>
-          </div>
-          <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white">
-            <p className="translate-y-0.5">2</p>
-          </div>
-          <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white">
-            <p className="translate-y-0.5">3</p>
-          </div>
-          <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white">
-            <p className="translate-y-0.5">4</p>
-          </div>
-          <div className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white">
-            <p className="translate-y-0.5">5</p>
-          </div>
-        </div>
+        <RatingSelection />
 
         <button className="rounded-full bg-_orange py-3 uppercase tracking-wider text-white hover:bg-white hover:text-_orange">
           Submit
@@ -46,6 +31,54 @@ function App() {
     </main>
   );
 }
+
+const RatingSelection = () => {
+  const [rating, setRating] = useState();
+
+  return (
+    <RadioGroup
+      value={rating}
+      onChange={setRating}
+      className="flex justify-between py-2 text-_light-gray"
+    >
+      <RadioGroup.Option
+        value={1}
+        as="div"
+        className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white"
+      >
+        <p className="translate-y-0.5">1</p>
+      </RadioGroup.Option>
+      <RadioGroup.Option
+        value={2}
+        as="div"
+        className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white"
+      >
+        <p className="translate-y-0.5">2</p>
+      </RadioGroup.Option>
+      <RadioGroup.Option
+        value={3}
+        as="div"
+        className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white"
+      >
+        <p className="translate-y-0.5">3</p>
+      </RadioGroup.Option>
+      <RadioGroup.Option
+        value={4}
+        as="div"
+        className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white"
+      >
+        <p className="translate-y-0.5">4</p>
+      </RadioGroup.Option>
+      <RadioGroup.Option
+        value={5}
+        as="div"
+        className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white"
+      >
+        <p className="translate-y-0.5">5</p>
+      </RadioGroup.Option>
+    </RadioGroup>
+  );
+};
 
 const ThankYou = () => {
   return (
