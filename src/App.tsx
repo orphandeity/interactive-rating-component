@@ -48,35 +48,35 @@ function App() {
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              1
+              <p className="translate-y-0.5">1</p>
             </RadioGroup.Option>
             <RadioGroup.Option
               value={2}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              2
+              <p className="translate-y-0.5">2</p>
             </RadioGroup.Option>
             <RadioGroup.Option
               value={3}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              3
+              <p className="translate-y-0.5">3</p>
             </RadioGroup.Option>
             <RadioGroup.Option
               value={4}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              4
+              <p className="translate-y-0.5">4</p>
             </RadioGroup.Option>
             <RadioGroup.Option
               value={5}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              5
+              <p className="translate-y-0.5">5</p>
             </RadioGroup.Option>
           </RadioGroup>
 
