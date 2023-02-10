@@ -27,11 +27,11 @@ function App() {
           </div>
 
           <div>
-            <h1 className="text-2xl text-white desktop:text-3xl desktop:tracking-wider">
+            <h1 className="text-2xl font-semibold text-white desktop:text-3xl desktop:tracking-wider">
               How did we do?
             </h1>
 
-            <p className="mt-4 text-sm font-light leading-6 text-_light-gray desktop:text-base desktop:tracking-wider">
+            <p className="mt-4 text-sm leading-6 text-_light-gray desktop:text-base desktop:tracking-wider">
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
             </p>
@@ -48,35 +48,35 @@ function App() {
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              <p className="translate-y-0.5">1</p>
+              1
             </RadioGroup.Option>
             <RadioGroup.Option
               value={2}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              <p className="translate-y-0.5">2</p>
+              2
             </RadioGroup.Option>
             <RadioGroup.Option
               value={3}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              <p className="translate-y-0.5">3</p>
+              3
             </RadioGroup.Option>
             <RadioGroup.Option
               value={4}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              <p className="translate-y-0.5">4</p>
+              4
             </RadioGroup.Option>
             <RadioGroup.Option
               value={5}
               as="div"
               className="flex h-11 w-11 cursor-pointer items-center justify-center rounded-full bg-_dark-blue shadow-sm transition hover:bg-_orange hover:text-white ui-checked:bg-_medium-gray ui-checked:text-white desktop:h-14 desktop:w-14"
             >
-              <p className="translate-y-0.5">5</p>
+              5
             </RadioGroup.Option>
           </RadioGroup>
 
@@ -102,7 +102,7 @@ const ThankYou = ({ rating }: { rating: number | null }) => {
         You selected <span>{rating}</span> out of 5
       </p>
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl text-white">Thank you!</h1>
+        <h1 className="text-3xl font-semibold text-white">Thank you!</h1>
 
         <p className="mt-3 mb-4 text-center text-sm font-light leading-6 text-_light-gray desktop:text-base">
           We appreciate you taking the time to give a rating. If you ever need

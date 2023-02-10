@@ -14,7 +14,7 @@ module.exports = {
         '_very-dark-blue': '#121417'
       },
       fontFamily: {
-        'sans': ['Overpass', 'sans-serif']
+        'sans': ['OverpassVariable', 'sans-serif']
       },
       screens: {
         'mobile': '375px',
